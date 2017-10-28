@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="css/hack1.css" rel="stylesheet">
+<title>article</title>
+<script type="text/javascript">
+function submitFunction(){
+	var x=document.forms["myForm"]["title"].value;
+	var y=document.forms["myForm"]["subtitle"].value;
+	var z=document.forms["myForm"]["content"].value;
+	if(x==null||x==""||y==null||y==""||y==null||y==""){
+		alert("Please enter fields");
+	}
+	else{
+		alert("Submission successfull")
+	}
+}	
+</script>
+</head>
+	<body>
+	<div class="logo"><a href="index.html"><img src="images/logo.png" width="200px" height="40px"></a>
+	<img src="images/QIM.png" width="200px" height="40px" class="logo1">
+		
+		<!--<nav class="menu-li2">
+		<ul>
+			<li><a href="#">Quikipedia</a></li>
+		</ul>
+		</nav>-->
+		<!--<nav class="menu-li3">
+			<h1>Welcome to Quikipedia</h1>
+		</nav>-->
+	</div>
+	<nav class="menu">
+	<ul>
+	<li><a href="index.html"><ins>Home</ins></a></li>
+    </ul>
+    <!--<form class="search-form">
+	<input type="text" placeholder="Search here">
+	<button>Search</button>
+	</form>-->
+	</nav>
+	<div class="row">
+		<div class="col-lg-1 col-md-1 col-sm-1">
+			<h1>New Article</h1>
+			<form name="myForm" onSubmit="submitFunction()">
+				<h3>Main Title</h3><input type="text" placeholder="Title" name="title">
+				<h3>Sub title</h3><input type="text" placeholder="Subtitle" name="subtitle">
+				<h3>About</h3><input type="text" placeholder="About" name="about">
+				<h3>References, Trainings & SOP's</h3><input type="text" placeholder="References, Trainings & SOP's" name="content">
+				<h3>Tools</h3><input type="text" placeholder="Tools" name="content">
+				<h3>See Also</h3><input type="text" placeholder="See Also" name="content">
+				<!--<div>
+				<button href="#">Add Subtitle</button>
+				</div>-->
+				<div>
+				<!--<input type="submit" name="sub1" value="Submit">-->
+				<button href="construction.html" value="submit">Submit</button>
+				<button class="button" href="construction.html" value="submit">Cancel</a></button>
+				</div>
+			</form>
+		</div>
+	</div>
+	</body>
+</html>
